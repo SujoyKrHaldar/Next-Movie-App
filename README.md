@@ -1,6 +1,6 @@
 ![Preview UI](/public/Preview.png)
 
-# React-Recipe-App
+# Next.js movie searching application
 
 [Live Url](https://react-recipe-finder-2022.netlify.app/)
 
