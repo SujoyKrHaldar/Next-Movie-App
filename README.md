@@ -2,7 +2,7 @@
 
 # Next.js movie searching application
 
-[Live Url](https://next-movie-finder.vercel.app)
+[Live Url - next-movie-finder.vercel.app](https://next-movie-finder.vercel.app)
 
 A movie finder website build using Next.js, movieDB api and tailwind css.
 
