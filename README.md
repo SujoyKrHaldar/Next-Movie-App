@@ -1,8 +1,8 @@
 ![Preview UI](/public/Preview.png)
 
-# React-Recipe-App
+# Next.js movie searching application
 
-[Live Url](https://react-recipe-finder-2022.netlify.app/)
+[Live Url - next-movie-finder.vercel.app](https://next-movie-finder.vercel.app)
 
 A movie finder website build using Next.js, movieDB api and tailwind css.
 
