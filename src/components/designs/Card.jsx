@@ -3,7 +3,7 @@ import Img from "../tools/Img";
 function Card({ item }) {
   return (
     <>
-      <div className="flex-[2_2_225px] h-[350px] p-4">
+      <div className="flex-[2_2_225px] h-[350px] p-4 rounded-md overflow-hidden">
         <div className="absolute inset-0 w-full h-full bg-black">
           <Img
             src={`https://image.tmdb.org/t/p/w500${item.poster_path}`}

@@ -7,7 +7,7 @@ function Layout({ children }) {
       <Navbar />
       <main className="w-full h-screen flex justify-evenly overflow-y-scroll">
         <Sidebar />
-        <section className="flex-1 p-16">{children}</section>
+        <section className="flex-1 ">{children}</section>
       </main>
     </>
   );

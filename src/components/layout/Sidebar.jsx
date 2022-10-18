@@ -25,7 +25,7 @@ function Sidebar() {
 
   return (
     <section
-      className="flex-1 sticky top-0 max-w-[300px] h-full border-r border-[#0000001a] pl-9 
+      className="flex-1 sticky top-0 max-w-[300px] h-full border-r border-[#0000001a] pl-12 
     flex flex-col justify-center"
     >
       <nav className=" font-semibold ">
@@ -33,7 +33,7 @@ function Sidebar() {
           <Link href={links.url} key={index}>
             <a
               className={`px-8 py-2 my-4 block text-[#989898] hover:text-black hover:bg-gray-100
-              duration-300 ${
+              duration-300 rounded-l-md ${
                 router.pathname == links.url
                   ? " text-black before:absolute before:w-[3px] before:h-full before:top-0 before:right-[-1.5px] before:bg-red-700"
                   : ""
@@ -45,7 +45,7 @@ function Sidebar() {
         ))}
       </nav>
 
-      <footer className="absolute bottom-0 left-0 w-full h-fit py-8 px-16">
+      <footer className="absolute border-t border-[#0000001a] bottom-0 left-0 w-full h-fit py-8 px-16">
         <p className="text-[#989898] text-sm">
           Copyright ©{new Date().getFullYear()}
         </p>
