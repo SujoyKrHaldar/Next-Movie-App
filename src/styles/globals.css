@@ -7,6 +7,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  transition: 0.3s ease;
 }
 
 div#__next {
@@ -23,6 +24,26 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   overflow-y: overlay;
+  font-size: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(198, 47, 47);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(117, 20, 20);
 }
 
 a {
@@ -44,18 +65,8 @@ p {
   font-size: 1rem;
 }
 
-/**************************
----------Optional----------
-**************************/
-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.btn {
-  padding: 0.6rem 1.8rem 0.7rem;
-  display: inline-block;
-  font-weight: 700;
-  border-radius: 9px;
+.tag {
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
 }

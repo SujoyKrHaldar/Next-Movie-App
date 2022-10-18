@@ -1,32 +1,16 @@
 import Link from "next/link";
 import { MdLocalMovies } from "react-icons/md";
-import Navbar_Desktop from "./components/navbar/Navbar_Desktop";
-
-const navLinks = [
-  {
-    link: "Home",
-    url: "/",
-  },
-  {
-    link: "favourite",
-    url: "/favourites",
-  },
-  {
-    link: "Watched",
-    url: "/watched",
-  },
-  {
-    link: "About",
-    url: "/about",
-  },
-];
+import Navbar_Desktop from "./Navbar_Desktop";
 
 function Navbar() {
   return (
     <>
-      <header className="flex-1 max-w-[300px] border-r-[1px] border-[#0000001a] px-8 flex flex-col justify-between">
+      <header
+        className="fixed inset-0 z-50 w-full h-fit border-b border-b-[#0000001a] px-16 py-6
+      flex items-center justify-between gap-4"
+      >
         <Link href="/">
-          <div className="w-auto cursor-pointer flex items-center justify-start gap-2  p-8">
+          <div className="w-auto cursor-pointer flex items-center justify-start gap-2 ">
             <div
               className="text-red-700
             flex items-center text-4xl "
@@ -39,13 +23,7 @@ function Navbar() {
           </div>
         </Link>
 
-        <Navbar_Desktop navLinks={navLinks} />
-
-        <footer className="p-8">
-          <p className="text-[#989898] text-sm">
-            Copyright ©{new Date().getFullYear()}
-          </p>
-        </footer>
+        <p>Search</p>
       </header>
     </>
   );

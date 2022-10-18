@@ -4,7 +4,7 @@ import Layout from "../components/layout/Layout";
 
 export async function getServerSideProps() {
   const res = await fetch(
-    `${process.env.API_URL}/trending/movie/week?api_key=${process.env.MOVIEDB_API_Key}`
+    `${process.env.API_URL}/trending/movie/week?api_key=${process.env.MOVIEDB_API_KEY}`
   );
   const data = await res.json();
 
@@ -16,7 +16,6 @@ export async function getServerSideProps() {
 }
 
 export default function Home({ data }) {
-  console.log(data);
   return (
     <>
       <Head>
