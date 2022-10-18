@@ -14,9 +14,7 @@ function favourite() {
         <div className="flex-1 w-full h-screen py-8 px-16 overflow-x-hidden overflow-y-scroll">
           <div className=" w-full h-full ">
             <div className=" py-4">
-              <p className="mb-4 text-xl font-bold sticky top-[-32px] py-4 z-50 bg-white">
-                Favourites
-              </p>
+              <h1>Favourites</h1>
               <div className="flex items-center gap-4 flex-wrap">
                 {/* {data.map((item, index) => (
                   <Card key={index} item={item} />
