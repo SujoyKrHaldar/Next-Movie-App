@@ -46,7 +46,7 @@ function Navbar() {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             className="flex-1 outline-none py-3 px-1 bg-transparent placeholder:text-sm "
-            placeholder="Search by movies, tv shows and more"
+            placeholder="Search by movie names"
           />
           {query.length === 0 ? (
             <div className="text-xl text-gray-500">

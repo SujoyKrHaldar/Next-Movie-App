@@ -34,20 +34,27 @@ function search({ data }) {
             <div className="py-4">
               <h1 className="sticky top-[96px] py-6 z-10 bg-white ">
                 Search result -{" "}
-                <span className="font-bold block">{query.keyword}</span>
+                <span className="font-bold ">{query.keyword}</span>
               </h1>
               <p>No result.</p>
             </div>
           )}
+
           {data.length > 0 && (
             <div className="py-4">
-              <h1 className="sticky top-[96px] py-6 z-10 bg-white ">
-                Search result -{" "}
-                <span className="font-bold block first-letter:uppercase">
-                  {query.keyword}
-                </span>
-              </h1>
-              <div className="flex items-center gap-4 flex-wrap">
+              <div className="sticky top-[96px] py-6 z-10 bg-white space-y-2">
+                <h1>
+                  Search result -{" "}
+                  <span className="font-bold ">{query.keyword}</span>
+                </h1>
+                <p>
+                  {data.length > 1
+                    ? `${data.length} results found.`
+                    : `${data.length} result found.`}
+                </p>
+              </div>
+
+              <div className="grid grid-cols-4 gap-4">
                 {data.map((item) => (
                   <Card key={item.id} item={item} />
                 ))}
