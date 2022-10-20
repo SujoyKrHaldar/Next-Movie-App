@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <NextNProgress color="#b91c1c" height={5} />
+      <NextNProgress color="#b91c1c" height={5} options={{ showSpinner: false }} />
       <Component {...pageProps} />
     </>
   );
